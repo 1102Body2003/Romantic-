@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة حب لشيماء</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .message {
+            font-size: 28px;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>ازيك يا شوشو</h1>
+    <div class="message" id="message"></div>
+
+    <script>
+        // قائمة الرسائل الرومانسية بتبجيل لشوشو أو شيماء
+        const messages = [
+            "وحشتيني يا شوشو، كل لحظة بعدك بتسحب من قلبي!",
+            "كل ما بشوفك يا شيماء، الدنيا بتنور بنورك يا حياتي.",
+            "إنتي العسل اللي بيحلي حياتي كل يوم، شوشو.",
+            "بحبك بزيادة يا أجمل حاجة في حياتي، شيماء!",
+            "شوفك كده، بحس إن الدنيا كلها ورد لما تكوني جنبي يا شوشو."
+        ];
+
+        // اختيار رسالة عشوائية
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        document.getElementById('message').innerText = randomMessage;
+    </script>
+</body>
+</html>
